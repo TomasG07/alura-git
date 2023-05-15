@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto - Barberia Arula</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="caja">
+        <h1><img src="assets/img/logo.png" alt="Logo Barberia" /></h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <form>
+        <label for="nombreyapellido">Nombre y apellidos </label
+        ><input
+          type="text"
+          id="nombreyapellido"
+          class="input-padron"
+          required
+        />
+        <label for="correoelectronico">Correo Electronico </label
+        ><input
+          type="email"
+          id="correoelectronico"
+          class="input-padron"
+          required
+          placeholder="email@dominio.com"
+        />
+        <label for="telefono">Telefono</label
+        ><input
+          type="tel"
+          id="telefono"
+          class="input-padron"
+          required
+          placeholder="(506) 8888888"
+        />
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" cols="70" rows="10" required></textarea>
+        <fieldset>
+          <legend class="test" id="test">
+            Como te gustaria que te Contactemos?
+          </legend>
+          <label for="email-radio"
+            ><input
+              type="radio"
+              name="contacto"
+              value="email"
+              id="email-radio"
+            />Email</label
+          >
+          <label for="Telefono-radio"
+            ><input
+              type="radio"
+              name="contacto"
+              value="telefono"
+              id="Telefono-radio"
+            />Telefono</label
+          >
+          <label for="Whatsapp-radio"
+            ><input
+              type="radio"
+              name="contacto"
+              value="Whatsapps"
+              id="Whatsapp-radio"
+              checked
+            />WhatsApp</label
+          >
+        </fieldset>
+        <fieldset>
+          <legend>En Cual horario le gustaria ser atendido?</legend>
+          <select name="" id="">
+            <option value="">Mañana</option>
+            <option value="">Tarde</option>
+            <option value="">Noche</option>
+          </select>
+        </fieldset>
+        <label for="" class="checkbox"
+          ><input type="checkbox" checked />Le gustaria recibir novedades y
+          promociones de la Barberia Alura?</label
+        >
+        <input type="submit" value="Enviar Formulario" class="enviar" />
+      </form>
+      <table>
+        <thead>
+          <tr>
+            <th>Dia</th>
+            <th>Horario</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Lunes</td>
+            <td>8:00am - 8:00pm</td>
+          </tr>
+          <tr>
+            <td>Miercoles</td>
+            <td>8:00am - 8:00pm</td>
+          </tr>
+          <tr>
+            <td>Viernes</td>
+            <td>8:00am - 8:00pm</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+    <footer>
+      <img src="assets/img/logo-blanco.png" alt="" />
+      <p class="copyrigth">
+        &copy Copyright. Todos los derechos reservados Tomas Gomez - 2023
+      </p>
+    </footer>
+  </body>
+</html>
